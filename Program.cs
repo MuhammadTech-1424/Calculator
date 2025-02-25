@@ -18,6 +18,7 @@ Console.WriteLine($"Sonlar bo'linmasi {son1 / son2}, qoldiq {son1 % son2}.");
 Console.WriteLine($"1-son 2-sidan kattami? {son1 > son2}");
 Console.WriteLine($"1-son 2-sidan kichikmi? {son1 < son2}");
 Console.WriteLine($"Sonlar tengmi? {son1 == son2}");
+
 // Shart operatori
 if (son1 > son2)
 {
