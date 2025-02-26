@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 Console.WriteLine("Bu KALKULYATOR dasturi");
 
@@ -32,3 +33,28 @@ else
 {
     Console.WriteLine("1-son 2-sidan kichik.");
 }
+// switch operatori
+Console.Write($"Bajariladigan arifmetik amalni kiriting (+, -, *, /):\n>>> ");
+string operation = Console.ReadLine();
+switch (operation)
+{
+    case "+":
+        Console.WriteLine($"{son1} * {son2} = {son1*son2}");
+        break;
+    case "/":
+        Console.WriteLine($"Bo'linma {son1/son2} ga teng, qoldiq {son1%son2}");
+        break;
+    default:
+        Console.WriteLine("Bunday amal mavjud emas.");
+        break;
+}   
+// switch expression
+string result = operation switch 
+{
+    "+" => $"Yig'indi {son1+son2} ga teng.",
+    "-" => $"Ayyirma {son1-son2} ga teng.",
+    "*" => $"Ko'paytma {son1*son2} ga teng.",
+    "/" => $"Bo'linma {son1/son2} ga, qoldiq {son1%son2} ga teng.",    
+    _ => "Bunday amal mavjud emas."
+};
+
