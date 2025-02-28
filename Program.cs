@@ -57,4 +57,30 @@ string result = operation switch
     "/" => $"Bo'linma {son1/son2} ga, qoldiq {son1%son2} ga teng.",    
     _ => "Bunday amal mavjud emas."
 };
+// while loop operatori
+int son = 1;
+while (son < son1)
+{
+    Console.WriteLine(son);
+    son ++;
+}
+// do while loop
+string parol = "";
+Console.WriteLine("Sizning parolingiz: \"0305\"");
+do
+{
+    Console.Write("Parolingizni kiriting: ");
+    parol = Console.ReadLine();
+} while (parol != "0305");
+Console.WriteLine("To'g'ri!");
 
+// for loop
+Console.WriteLine("< KARRA JADVALI >");
+for (int i1 = 1; i1 <= 10; i1 ++)
+{
+    for (int i2 = 1; i2 <= 10; i2 ++)
+    {
+        Console.WriteLine($"{i1} * {i2} = {i1 * i2}");
+    }
+    Console.Write("\n");
+}
