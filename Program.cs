@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Calculator calculate = new Calculator();
+        Calculator calculate = new();
         calculate.UserInputs();
         calculate.MatematicalOperations();
         calculate.Compare();
